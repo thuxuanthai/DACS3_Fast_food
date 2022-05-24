@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Please Fill Information"
+        android:textColor="#B9000000"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/lnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtlabel"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <EditText
+            android:inputType="textCapWords"
+            style="@style/editTextEntryName"
+            android:imeOptions="actionDone"
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edt_background"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="10dp"
+            android:hint="Name"
+            android:paddingLeft="10dp"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_address_detail"-->
+<!--            android:gravity="center|left"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/edt_background"-->
+<!--            android:drawableLeft="@drawable/ic_gps"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:text="Address"-->
+<!--            android:paddingLeft="10dp" />-->
+
+        <TextView
+            android:id="@+id/edtPhone"
+            android:textSize="18sp"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_background"
+            android:drawableLeft="@drawable/ic_phone_24"
+            android:drawablePadding="10dp"
+            android:hint="Phone"
+            android:paddingLeft="10dp" />
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/edtPassword"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:background="@drawable/edt_background"-->
+        <!--                android:drawableLeft="@drawable/ic_password"-->
+        <!--                android:drawablePadding="10dp"-->
+        <!--                android:hint="Password"-->
+        <!--                android:inputType="textPassword"-->
+        <!--                android:paddingLeft="10dp" />-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

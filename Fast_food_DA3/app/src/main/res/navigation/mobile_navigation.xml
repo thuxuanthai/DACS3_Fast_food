@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fast_food_da3.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.fast_food_da3.ui.menu.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/nav_food_detail"
+        android:name="com.example.fast_food_da3.ui.fooddetail.FoodDetailFragment"
+        android:label="@string/menu_food_detail"
+        tools:layout="@layout/fragment_food_detail" />
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.example.fast_food_da3.ui.foodlist.FoodListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.fast_food_da3.ui.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_food_list" />
+    <fragment
+        android:id="@+id/nav_view_orders"
+        android:name="com.example.fast_food_da3.ui.view_orders.ViewOrdersFragment"
+        android:label="@string/menu_view_orders"
+        tools:layout="@layout/fragment_view_order" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.fast_food_da3.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+<!--    <fragment-->
+<!--        android:id="@+id/nav_username_profile"-->
+<!--        android:name="com.example.fast_food_da3.ui.profile.UserNameProfile"-->
+<!--        android:label="@string/username_profile"-->
+<!--        tools:layout="@layout/layout_username_profile" />-->
+    <fragment
+        android:id="@+id/nav_phone_profile"
+        android:name="com.example.fast_food_da3.ui.profile.UserPhoneProfile"
+        android:label="@string/phone_profile"
+        tools:layout="@layout/layout_phone_profile" />
+</navigation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#F4F2F2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Phone Number"
+            android:textColor="@drawable/selector2"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_phone_24"
+            android:drawablePadding="5dp"/>
+
+        <EditText
+            android:singleLine="true"
+            android:maxLength="13"
+            android:layout_alignParentRight="true"
+            android:id="@+id/profile_number"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="+84 1234567890"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/border_color"
+            android:textSize="18dp"
+            android:background="@null"
+            android:importantForAutofill="no"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+
+    </RelativeLayout>
+    <!--    android:imeOptions="actionDone"-->
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/background_button"
+        />
+
+</LinearLayout>

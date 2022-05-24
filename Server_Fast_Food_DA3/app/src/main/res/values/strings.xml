@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Admin FF</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+
+    <string name="menu_category">Category</string>
+    <string name="menu_food_list">Food List</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_user">User</string>
+
+    <string name="popular_categiries">Popular categiries</string>
+    <string name="action_search">Search</string>
+    <string name="menu_sign_out">Logout</string>
+    <string name="action_filter">Filter</string>
+    <string name="google_maps_key">AIzaSyBY3c7RFvwzs06juEg0nzIU7PVERTIV3U8</string>
+</resources>

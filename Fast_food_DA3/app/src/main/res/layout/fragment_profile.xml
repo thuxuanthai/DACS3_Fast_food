@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:background="#F4F2F2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:background="#F4F2F2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/sel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:background="@drawable/anh_bia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Me"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="50dp"
+                        android:backgroundTint="#2CFBFCFD">
+
+                        <ImageView
+                            android:id="@+id/profile_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_account" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="bottom|right"
+                        android:backgroundTint="@color/overlay_color"
+                        >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        app:cardCornerRadius="4.5dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#E3E1E1"
+                       >
+
+                        <ImageView
+                            android:id="@+id/edit_img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_edit" />
+
+                    </androidx.cardview.widget.CardView>
+                    </androidx.cardview.widget.CardView>
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/profile_name_User"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="txtUserName"
+                    android:textColor="#F6035C"
+                    android:textStyle="bold"
+                    android:textSize="19dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="IdUser"
+                    android:textColor="@drawable/selector2"
+                    android:textSize="16dp"
+                    android:drawableLeft="@drawable/ic_key"
+                    android:drawablePadding="5dp"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/txtIdUser"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:text="txtIdUserccccccccccccccccccccccccccccccccccccccccccc"
+                    android:textColor="@color/border_color"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/background_cokor"
+            android:gravity="bottom"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Phone Number"
+                    android:textColor="@drawable/selector2"
+                    android:textSize="16dp"
+                    android:drawableLeft="@drawable/ic_phone_24"
+                    android:drawablePadding="5dp"/>
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/profile_number"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:text="txtPhoneUser"
+                    android:textColor="@color/border_color"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Username"
+                    android:textColor="@drawable/selector2"
+                    android:textSize="16dp"
+                    android:drawableLeft="@drawable/ic_account"
+                    android:drawablePadding="5dp"/>
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/profile_name"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="txtUserName"
+                    android:textColor="@color/border_color"
+                    android:textSize="16dp"
+                    android:drawableRight="@drawable/ic_keyboard"
+                    android:drawablePadding="5dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/background_cokor"/>
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_gps"
+                    android:drawablePadding="5dp"
+                    android:text="Address"
+                    android:textColor="@drawable/selector2"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/profile_address"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="txtUserAddress"
+                    android:textColor="@color/border_color"
+                    android:textSize="16dp"
+                    android:drawableRight="@drawable/ic_keyboard"
+                    android:drawablePadding="5dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

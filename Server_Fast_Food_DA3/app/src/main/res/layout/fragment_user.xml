@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_cokor"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/txt_user_filter"
+        android:text="User (0)"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/brandon_medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_people"/>
+
+    <View
+        android:id="@+id/nul"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_user_filter"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/background_cokor"
+        android:gravity="bottom" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nul"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/txt_empty_user"
+        android:text="EMPTY USER"
+        android:fontFamily="@font/brandon_medium"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/group_place_holder"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="8dp"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/btn_insert"-->
+<!--                android:text="insert"-->
+<!--                android:backgroundTint="#D81B60"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+<!--        </LinearLayout>-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+</RelativeLayout>
